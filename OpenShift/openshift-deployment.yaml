@@ -1,0 +1,18 @@
+apiVersion: apps.openshift.io/v1
+kind: DeploymentConfig
+metadata:
+  name: my-app
+spec:
+  replicas: 1
+  selector:
+    name: my-app
+  strategy:
+    type: Rolling
+  template:
+    metadata:
+      labels:
+        name: my-app
+    spec:
+      containers:
+        - name: my-app
+          image: my-app-image:latest
