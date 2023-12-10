@@ -11,10 +11,3 @@ public class UserSignupDetailsApplication {
 	}
 
 }
-
-
-	git init
-	git add .
-		git commit -m "Initial commit"
-		git remote add origin https://github.com/swift-service-hub/User-Signup-Details.git
-		git push -u origin master
